@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/choseFragment">
+
+    <fragment
+        android:id="@+id/choseFragment"
+        android:name="com.ex.homework8_3month.ChoseFragment"
+        android:label="fragment_chose"
+        tools:layout="@layout/fragment_chose" >
+        <action
+            android:id="@+id/action_choseFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_choseFragment_to_detailFragmentTwo"
+            app:destination="@id/detailFragmentTwo" />
+        <action
+            android:id="@+id/action_choseFragment_to_detailFragmentThree"
+            app:destination="@id/detailFragmentThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.ex.homework8_3month.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/detailFragmentTwo"
+        android:name="com.ex.homework8_3month.DetailFragmentTwo"
+        android:label="fragment_detail_two"
+        tools:layout="@layout/fragment_detail_two" />
+    <fragment
+        android:id="@+id/detailFragmentThree"
+        android:name="com.ex.homework8_3month.DetailFragmentThree"
+        android:label="fragment_detail_three"
+        tools:layout="@layout/fragment_detail_three" />
+</navigation>
